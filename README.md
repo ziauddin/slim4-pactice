@@ -1,19 +1,12 @@
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/781074/67567104-9fe7d000-f729-11e9-8a2d-0c7286475aac.png">
+  <a href="https://www.nzian.xyz" target="_blank">NZIAN</a>
 </h1>
 
-<h3 align="center">Slim 4 Skeleton</h3>
+<h3 align="center">Slim 4 Skeleton Practice</h3>
 
 <div align="center">
 
-  [![Latest Version on Packagist](https://img.shields.io/github/release/odan/slim4-skeleton.svg)](https://packagist.org/packages/odan/slim4-skeleton)
-  [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-  [![Build Status](https://github.com/odan/slim4-skeleton/workflows/build/badge.svg)](https://github.com/odan/slim4-skeleton/actions)
-  [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/odan/slim4-skeleton.svg)](https://scrutinizer-ci.com/g/odan/slim4-skeleton/code-structure)
-  [![Quality Score](https://img.shields.io/scrutinizer/quality/g/odan/slim4-skeleton.svg)](https://scrutinizer-ci.com/g/odan/slim4-skeleton/?branch=master)
-  [![Total Downloads](https://img.shields.io/packagist/dt/odan/slim4-skeleton.svg)](https://packagist.org/packages/odan/slim4-skeleton/stats)
-
-This is a skeleton to quickly set up a new [Slim 4](https://www.slimframework.com/) application.
+This is a [Slim4-skeleton](https://github.com/odan/slim4-skeleton) to quickly set up a new [Slim 4](https://www.slimframework.com/) application.
 
 </div>
 
@@ -56,10 +49,6 @@ This project is based on best practices and industry standards:
 * Docker container with Xdebug support for PhpStorm
 * Swagger OpenAPI documentation
 
-## Screenshot
-
-![screely-1611483778132](https://user-images.githubusercontent.com/781074/105627322-940c2180-5e36-11eb-9941-fa75bb00e4c8.png)
-
 ## Usage
 
 This project is only a skeleton-project and not a "framework".
@@ -69,13 +58,11 @@ For example, it's possible to replace the existing QueryBuilder with another com
 ## Support
 
 * **[Documentation](https://odan.github.io/slim4-skeleton/)**
-* [Issues](https://github.com/odan/slim4-skeleton/issues)
-* [Blog](https://odan.github.io/)  
-* [Donate](https://odan.github.io/donate.html) for this project.
+* [Issues](https://github.com/ziauddin/slim4-practice/issues) 
 
 ## Contributing
 
-Please create an [issue](https://github.com/odan/slim4-skeleton/issues) first, so we can discuss it in advance.
+Please create an [issue](https://github.com/ziauddin/slim4-practice/issues) first, so we can discuss it in advance.
 
 ## License
 
