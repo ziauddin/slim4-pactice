@@ -130,7 +130,7 @@ final class JiboniRepository
         return [
             'id' => $jiboni->id,
             'title' => $jiboni->title,
-            'desc' => $jiboni->desc
+            'desc' => $jiboni->desc,
         ];
     }
 }

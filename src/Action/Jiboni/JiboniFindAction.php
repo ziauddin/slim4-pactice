@@ -58,7 +58,7 @@ final class JiboniFindAction
             $jiboniList[] = [
                 'id' => $jiboni->id,
                 'ttile' => $jiboni->title,
-                'desc' => $jiboni->desc
+                'desc' => $jiboni->desc,
             ];
         }
 

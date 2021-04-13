@@ -48,7 +48,6 @@ return function (App $app) {
             $app->get('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniReadAction::class)->setName('get-jiboni');
             $app->put('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniUpdateAction::class)->setName('update-jiboni');
             $app->delete('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniDeleteAction::class)->setName('delete-jiboni');
-
         }
     )->add(HttpBasicAuthentication::class);
 };

@@ -56,7 +56,7 @@ final class JiboniReadAction
         $data = [
             'id' => $jiboni->id,
             'title' => $jiboni->title,
-            'desc' => $jiboni->desc
+            'desc' => $jiboni->desc,
         ];
 
         return $this->responder->withJson($response, $data);

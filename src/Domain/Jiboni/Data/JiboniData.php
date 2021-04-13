@@ -20,7 +20,7 @@ final class JiboniData
     public const COLUMNS = [
         'id',
         'title',
-        'desc'
+        'desc',
     ];
 
     /**
