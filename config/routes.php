@@ -41,6 +41,14 @@ return function (App $app) {
             $app->get('/hayatus-sahaba-chapters/{hscid}', \App\Action\HayatusSahabaChapter\HayatusSahabaChapterReadAction::class)->setName('read-hSChapter');
             $app->put('/hayatus-sahaba-chapters/{hscid}', \App\Action\HayatusSahabaChapter\HayatusSahabaChapterUpdateAction::class)->setName('up-hSChapter');
             $app->delete('/hayatus-sahaba-chapters/{hscid}', \App\Action\HayatusSahabaChapter\HayatusSahabaChapterDeleteAction::class)->setName('del-hSChapter');
+
+            // jiboni kitab
+            $app->get('/jibonis', \App\Action\Jiboni\JiboniFindAction::class)->setName('jibonis');
+            $app->post('/jibonis', \App\Action\Jiboni\JiboniCreateAction::class)->setName('create-jiboni');
+            $app->get('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniReadAction::class)->setName('get-jiboni');
+            $app->put('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniUpdateAction::class)->setName('update-jiboni');
+            $app->delete('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniDeleteAction::class)->setName('delete-jiboni');
+
         }
     )->add(HttpBasicAuthentication::class);
 };
