@@ -17,6 +17,8 @@ $settings['root'] = dirname(__DIR__);
 $settings['temp'] = $settings['root'] . '/tmp';
 $settings['public'] = $settings['root'] . '/public';
 $settings['template'] = $settings['root'] . '/templates';
+$settings['upload'] = $settings['root'] . '/uploads';
+
 
 // Error handler
 $settings['error'] = [

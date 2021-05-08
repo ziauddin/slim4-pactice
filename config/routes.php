@@ -17,6 +17,8 @@ return function (App $app) {
     $app->group(
         '/api/v1',
         function (RouteCollectorProxy $app) {
+           // die(var_dump($app->getContainer()->get('settings')));
+
             $app->get('/users', \App\Action\User\UserFindAction::class);
             $app->post('/users', \App\Action\User\UserCreateAction::class);
             $app->get('/users/{user_id}', \App\Action\User\UserReadAction::class);
@@ -48,6 +50,14 @@ return function (App $app) {
             $app->get('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniReadAction::class)->setName('get-jiboni');
             $app->put('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniUpdateAction::class)->setName('update-jiboni');
             $app->delete('/jibonis/{jiboni_id}', \App\Action\Jiboni\JiboniDeleteAction::class)->setName('delete-jiboni');
+
+             // app-infos
+             $app->get('/app-infos', \App\Action\AppInfo\AppInfoFindAction::class)->setName('appInfos');
+             $app->post('/app-infos', \App\Action\AppInfo\AppInfoCreateAction::class)->setName('create-appInfo');
+             $app->get('/app-infos/{appInfo_id}', \App\Action\AppInfo\AppInfoReadAction::class)->setName('get-appInfo');
+             $app->put('/app-infos/{appInfo_id}', \App\Action\AppInfo\AppInfoUpdateAction::class)->setName('update-appInfo');
+             $app->delete('/app-infos/{appInfo_id}', \App\Action\AppInfo\AppInfoDeleteAction::class)->setName('delete-appInfo');
+
         }
     )->add(HttpBasicAuthentication::class);
 };
