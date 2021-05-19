@@ -19,7 +19,6 @@ $settings['public'] = $settings['root'] . '/public';
 $settings['template'] = $settings['root'] . '/templates';
 $settings['upload'] = $settings['root'] . '/uploads';
 
-
 // Error handler
 $settings['error'] = [
     // Should be set to false in production

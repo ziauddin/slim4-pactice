@@ -62,7 +62,7 @@ final class AppInfoReadAction
             'app_image' => $appInfo->app_image,
             'rank' => $appInfo->rank,
             'version' => $appInfo->version,
-            'update' => $appInfo->update
+            'update' => $appInfo->update,
         ];
 
         return $this->responder->withJson($response, $data);

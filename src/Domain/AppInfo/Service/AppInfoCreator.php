@@ -5,8 +5,8 @@ namespace App\Domain\AppInfo\Service;
 use App\Domain\AppInfo\Data\AppInfoData;
 use App\Domain\AppInfo\Repository\AppInfoRepository;
 use App\Factory\LoggerFactory;
-use Psr\Log\LoggerInterface;
 use App\Factory\UploadFileFactory;
+use Psr\Log\LoggerInterface;
 
 /**
  * Service.
@@ -17,7 +17,7 @@ final class AppInfoCreator
 
     private AppInfoValidator $appInfoValidator;
 
-    private UploadFileFactory $fileUploded;
+    private UploadFileFactory $fileUplod;
 
     private LoggerInterface $logger;
 
@@ -37,7 +37,8 @@ final class AppInfoCreator
     ) {
         $this->repository = $repository;
         $this->appInfoValidator = $appInfoValidator;
-        $this->fileUploaded = $fileUploaded;
+        $this->fileUpload = $fileUploaded;
+
         $this->logger = $loggerFactory
             ->addFileHandler('appInfo_creator.log')
             ->createLogger();
@@ -54,10 +55,10 @@ final class AppInfoCreator
     {
         // Input validation
         $this->appInfoValidator->validateAppInfo($data);
-
         if (isset($data['uploadedFile'])) {
             if ($data['uploadedFile']['app_image']->getError() === UPLOAD_ERR_OK) {
-                $filename = $this->fileUploaded->moveUploadedFile($data['uploadedFile']['app_image']);
+                $filename = $this->fileUpload->moveUploadedFile($data['uploadedFile']['app_image']);
+
                 $data['app_image'] = $filename;
             }
         }

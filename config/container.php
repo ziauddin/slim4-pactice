@@ -1,9 +1,8 @@
 <?php
 
 use App\Factory\LoggerFactory;
-use App\Handler\DefaultErrorHandler;
 use App\Factory\UploadFileFactory;
-
+use App\Handler\DefaultErrorHandler;
 use Cake\Database\Connection;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -53,8 +52,8 @@ return [
         return new LoggerFactory($container->get('settings')['logger']);
     },
 
-     // The uploader factory
-     UploadFileFactory::class => function (ContainerInterface $container) {
+    // The uploader factory
+    UploadFileFactory::class => function (ContainerInterface $container) {
         return new UploadFileFactory($container->get('settings')['upload']);
     },
 

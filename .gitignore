@@ -22,6 +22,8 @@ package-lock.json
 vendor/
 build/
 node_modules/
+uploads/
+public/uploads/
 
 .env
 public/.env

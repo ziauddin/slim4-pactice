@@ -11,26 +11,21 @@ final class UploadFileFactory
 {
     private string $path;
 
-    private UploadedFile $uploadedFile;
-
     /**
      * The constructor.
      *
-     * @param array<mixed> $path The file upload Path
+     * @param string $path The file upload Path
      */
     public function __construct(string $path)
     {
-        $this->path = (string)$path;
+        $this->path = (string)$path ?? '';
     }
 
     /**
- * Moves the uploaded file to the upload directory and assigns it a unique name
- * to avoid overwriting an existing uploaded file.
- *
- * @param string $directory directory to which the file is moved
- * @param UploadedFile $uploadedFile file uploaded file to move
- * @return string filename of moved file
- */
+     * @param UploadedFile $uploadedFile file uploaded file to move
+     *
+     * @return string filename of moved file name
+     */
     public function moveUploadedFile(UploadedFile $uploadedFile)
     {
         $extension = pathinfo($uploadedFile->getClientFilename(), PATHINFO_EXTENSION);

@@ -5,8 +5,8 @@ namespace App\Domain\AppInfo\Service;
 use App\Domain\AppInfo\Data\AppInfoData;
 use App\Domain\AppInfo\Repository\AppInfoRepository;
 use App\Factory\LoggerFactory;
-use Psr\Log\LoggerInterface;
 use App\Factory\UploadFileFactory;
+use Psr\Log\LoggerInterface;
 
 /**
  * Service.

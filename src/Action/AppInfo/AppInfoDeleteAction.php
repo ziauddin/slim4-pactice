@@ -52,7 +52,7 @@ final class AppInfoDeleteAction
         // Invoke the domain (service class)
         $this->appInfoDeleter->deleteAppInfo($appInfoId);
 
-        $result = ['status' => 200, 'message' => "app info delete successfully"];
+        $result = ['status' => 200, 'message' => 'app info delete successfully'];
 
         // Render the json response
         return $this->responder->withJson($response, $result);
